@@ -1,20 +1,16 @@
-# GRN-tutorial
-Tutorial on inferring gene regulatory networks from single-cell data
+# Tutorial on "Gene regulatory network inference from single-cell transcriptomics data" (ISMB 2022)
 
-# Draft Schedule of the tutorial
-including coffee breaks (half-day or **full-day** schedule)
-
-## Full Day Schedule
+# Schedule of the Tutorial
 
 *11:00 am - 6:00 pm* (Lunch Break 1:00 pm - 2:00 pm; Coffee Breaks at 3:15 - 3:30 and 4:45 - 5:00 pm)
 
 **11:00-11:30:** Welcome, Introduction, plan for day and meet tutors/speakers
 
 **11:30-12:15:** Talk 1 (~30min+questions)
-    Prof. Murali (*Brief intro to scRNA-seq, GRN inference and BEELINE*)
+    T. M. Murali (*Brief intro to scRNA-seq, GRN inference and BEELINE*)
 
 **12:15-13:00:** Talk 2 (~30min+questions)
-    *(tentatively AM) TENET and/or PySCENIC*
+    *(tentatively AM) TENET*
 
 **13:00-14:00:** *Lunch*
 
@@ -44,5 +40,3 @@ edge weights etc.,)
 
 **17:30-18:00:** Wind up, discussions, feedback and perspectives
 
-- *Prof. Murali’s students to implement/integrate TENET into BEELINE. Potentially 1-2 students to join the workshop as instructors.*
-- *Synthetic data generated either from BoolODE and from modelling scParameters*
