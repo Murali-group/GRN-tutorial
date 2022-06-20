@@ -49,17 +49,17 @@ edge weights etc.,)
     - Operating System: Ubuntu 20.04.1 LTS (64bit)
     - Memory(RAM): 2GB
     - Root access:
-        - usermame: ismb2022-grn
+        - username: ismb2022-grn
         - password: root
     - VM contains:
         - Docker v20.10.7
         - Anaconda v4.12.0
         - Python v3.9.12
         - Java v11.0.15
-        - BEELINE installation and configurations (/home/ismb2022-grn/ISMB2022-GRN-Workshop/Beeline)
-        - TENET installation and configurations
+        - BEELINE installation and configurations (`/home/ismb2022-grn/ISMB2022-GRN-Workshop/Beeline`)
+        - TENET installation and configurations (`/home/ismb2022-grn/ISMB2022-GRN-Workshop/TENET`)
 ### BEELINE
-Open terminal and execute following commands
+Open a new terminal and execute following commands
 ```commandline
 cd /home/ismb2022-grn/ISMB2022-GRN-Workshop/Beeline
 conda activate BEELINE
@@ -110,7 +110,7 @@ The following output files will be created -
 2. Early Precision: `/home/ismb2022-grn/ISMB2022-GRN-Workshop/Beeline/outputs/Curated/VSC/VSC-boxplot-EPr.pdf`
 3. Overview: `/home/ismb2022-grn/ISMB2022-GRN-Workshop/Beeline/outputs/Curated/VSC/VSC-overview.pdf`
 
-> **Note:** Work is in progress to configure the output file directory through the BLPlotter command.
+> **Note:** Work is in progress to configure the output file directory through the BLPlotter script.
 Until then, the plots will be created as per the output settings in the last configuration file of the `--config` option.
 
 
