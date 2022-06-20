@@ -1,6 +1,6 @@
 # Tutorial on "Gene regulatory network inference from single-cell transcriptomics data" (ISMB 2022)
 
-# Schedule of the Tutorial
+# Schedule 
 
 *11:00 am - 6:00 pm* (Lunch Break 1:00 pm - 2:00 pm; Coffee Breaks at 3:15 - 3:30 and 4:45 - 5:00 pm)
 
@@ -40,3 +40,6 @@ edge weights etc.,)
 
 **17:30-18:00:** Wind up, discussions, feedback and perspectives
 
+# Instructions
+
+# Resources
