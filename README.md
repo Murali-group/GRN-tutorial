@@ -42,7 +42,7 @@ edge weights etc.,)
 
 # Instructions
 1. [Download](https://www.virtualbox.org/wiki/Downloads) and [install](https://www.virtualbox.org/manual/ch02.html) Virtual Box.
-2. [Download](https://drive.google.com/drive/folders/1AgKtJere3qq4URhQMQCz5_VyQ_SCVR6c?usp=sharing) the pre-configured Virtual Machine(VM) image.
+2. [Download](https://drive.google.com/file/d/1HRAySKr6dkljbGjwY14gHbu5PsjDPACy/view?usp=sharing) the pre-configured Virtual Machine(VM) image.
 3. Create a VM by [importing](https://docs.oracle.com/cd/E26217_01/E26796/html/qs-import-vm.html) the downloaded VM image.
 4. Details of the imported VM are - 
     - VM Name: ISMB2022-GRN-VM
