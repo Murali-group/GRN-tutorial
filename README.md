@@ -4,29 +4,27 @@
 
 *11:00 am - 6:00 pm* (Lunch Break 1:00 pm - 2:00 pm; Coffee Breaks at 3:15 - 3:30 and 4:45 - 5:00 pm)
 
+**10:45-11:00:** Arrival and coffee
 **11:00-11:30:** Welcome, Introduction, plan for day and meet tutors/speakers
 
 **11:30-12:15:** Talk 1 (~30min+questions)
-    T. M. Murali (*Brief intro to scRNA-seq, GRN inference and BEELINE*)
+    T. M. Murali (*BEELINE*)
 
 **12:15-13:00:** Talk 2 (~30min+questions)
-    *(tentatively AM) TENET*
+    Kedar Natarajan *TENET*
 
 **13:00-14:00:** *Lunch*
 
-**14:00-15:15:** GRN inference method 1 (*Hands-on*)
-    *PySCENIC*
-    *Short introduction to scRNA-seq, methods overview &amp; principle*
-    *Count matrix*
-    *Jupyter notebooks with steps (~15-25min)*
-    *Applying GRN inference method 1 on simulated data (workflow and let users run
-themselves). Simulated data from BoolODE as well as modelled scRNA-seq
-parameters*
-    *Advanced users (running GRN inference on public scRNA-seq data)*
+**14:00-15:15:** BEELINE (*Hands-on*)
+    *Short introduction to scRNA-seq, methods overview &amp; principle* (KNN)
+    *Generating synthetic data using BoolODE* (KA)
+    *Running BEELINE on synthetic/toy data using pre-selected methods* (KA/BA/KNN)
+    *Plotting output from BEELINE (jupyter notebooks)* (KA/BA/KNN)
+    *Advanced users (running GRN inference on public scRNA-seq data)* (KA/BA/KNN)
 
 **15:15-15:30:** *Break*
 
-**15:30-16:45:** GRN inference method 2 (Hands-on)
+**15:30-16:45:** BEELINE 
     *Implement TENET in BEELINE*
     *Intro to TENET and BEELINE (methods overview)*
     *Jupyter notebooks with steps (~15-25min)*
@@ -35,12 +33,18 @@ parameters*
 
 **16:45-17:00:** *Break*
 
-**17:00-17:30:** *Discussion:* advantages, trade-offs, considerations (scaling methods to increased features vs cells, single-cell atlases, accuracy vs sensitivity, TF-target prediction vs
-edge weights etc.,)
+**17:00-17:30:** TENET
+    *Running TENET on terminal using BoolODE synthetic data*
+    *Running TENET on terminal using test real data/Tuck et al dataset*
+    *Visualising TENET results on Cytoscape, and interpretation*
+    *Advanced users (public scRNA-seq data; processed count matrix)*
+    
+**17:30-18:00:** *Discussion:* 
+                Advantages, trade-offs and considerations for GRN inference
+                Perspectives and feedback from audience
+                ISMB Feedback survey link
 
-**17:30-18:00:** Wind up, discussions, feedback and perspectives
-
-# Instructions
+# Instructions (Linux)
 1. [Download](https://www.virtualbox.org/wiki/Downloads) and [install](https://www.virtualbox.org/manual/ch02.html) Virtual Box.
 2. [Download](https://drive.google.com/file/d/1HRAySKr6dkljbGjwY14gHbu5PsjDPACy/view?usp=sharing) the pre-configured Virtual Machine(VM) image.
 3. Create a VM by [importing](https://docs.oracle.com/cd/E26217_01/E26796/html/qs-import-vm.html) the downloaded VM image.
@@ -58,6 +62,67 @@ edge weights etc.,)
         - Java v11.0.15
         - BEELINE installation and configurations (`/home/ismb2022-grn/ISMB2022-GRN-Workshop/Beeline`)
         - TENET installation and configurations (`/home/ismb2022-grn/ISMB2022-GRN-Workshop/TENET`)
+
+
+# Instructions (Mac with Intel architecture). Tested on MBP 2019, 2.4Ghz Quad-Core intel i5, 8GB OS Monterey
+1. [Download](https://www.virtualbox.org/wiki/Downloads) and [install](https://www.virtualbox.org/manual/ch02.html) Virtual Box.
+2. [Download](https://drive.google.com/file/d/1HRAySKr6dkljbGjwY14gHbu5PsjDPACy/view?usp=sharing) the pre-configured Virtual Machine(VM) image.
+3. Create a VM by [importing](https://docs.oracle.com/cd/E26217_01/E26796/html/qs-import-vm.html) the downloaded VM image.
+4. If you encounter kernel error, try below options
+    a. Go to System Preferences > Security & Privacy and then allow VirtualBox to load
+    b. Restart mac in recovery mode (Command (⌘) + R), goto Utilities tab and terminal. type "spctl kext-consent add VB5E2TV963". Restart again and repeat step (a) and restart virtualbox
+5. Details of the imported VM are - 
+    - VM Name: ISMB2022-GRN-VM
+    - Operating System: Ubuntu 20.04.1 LTS (64bit)
+    - Memory(RAM): 2GB
+    - Root access:
+        - username: ismb2022-grn
+        - password: root
+    - VM contains:
+        - Docker v20.10.7
+        - Anaconda v4.12.0
+        - Python v3.9.12
+        - Java v11.0.15
+        - BEELINE installation and configurations (`/home/ismb2022-grn/ISMB2022-GRN-Workshop/Beeline`)
+        - TENET installation and configurations (`/home/ismb2022-grn/ISMB2022-GRN-Workshop/TENET`)
+
+
+# Instructions (Mac with ARM/M1/Silicon architecture). Tested on MBP 2021, Apple M1, 16GB OS Monterey
+_VirtualBox is not supported on MACs with ARM architecture
+1. [Download](https://www.parallels.com/blogs/parallels-desktop-apple-silicon-mac/) and [install] Parallels. Allow access to downloads folder.
+2. Free Download Ubuntu 20.04.2 ARM64 (2.37GB, free) within Parallels GUI (~3-5min; ~30MB/sec)
+3. Create a 15 day trial account, create password for the Ubuntu OS
+4. [Download](https://www.virtualbox.org/wiki/Downloads) and [install](https://www.virtualbox.org/manual/ch02.html) Virtual Box within Ubuntu
+5. If you encounter error during virtual box installation, try below steps
+    a. sudo apt-get update
+	b. sudo dpkg -i --force-architecture Downloads/virtualbox-6.1_6.1.34-150636.1~Ubuntu~eoan_amd64.deb
+    c. If you see a kernel error, try below
+    d. echo "deb [arch=amd64] https://download.virtualbox.org/virtualbox/debian $(lsb_release -sc) contrib" | sudo tee /etc/apt/sources.list.d/virtualbox.list
+    e. wget https://www.virtualbox.org/download/oracle_vbox_2016.asc
+    f. sudo apt-key add oracle_vbox_2016.asc
+    g. sudo apt update
+    h. sudo apt install virtualbox-6.1
+6. Start virtual box
+7. [Download](https://drive.google.com/file/d/1HRAySKr6dkljbGjwY14gHbu5PsjDPACy/view?usp=sharing) the pre-configured Virtual Machine(VM) image.
+8. Create a VM by [importing](https://docs.oracle.com/cd/E26217_01/E26796/html/qs-import-vm.html) the downloaded VM image.
+9. Details of the imported VM are - 
+    - VM Name: ISMB2022-GRN-VM
+    - Operating System: Ubuntu 20.04.1 LTS (64bit)
+    - Memory(RAM): 2GB
+    - Root access:
+        - username: ismb2022-grn
+        - password: root
+    - VM contains:
+        - Docker v20.10.7
+        - Anaconda v4.12.0
+        - Python v3.9.12
+        - Java v11.0.15
+        - BEELINE installation and configurations (`/home/ismb2022-grn/ISMB2022-GRN-Workshop/Beeline`)
+        - TENET installation and configurations (`/home/ismb2022-grn/ISMB2022-GRN-Workshop/TENET`)
+
+
+
+
 ### BEELINE
 Open a new terminal and execute following commands
 ```commandline
