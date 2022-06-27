@@ -40,11 +40,11 @@ edge weights etc.,)
 
 **17:30-18:00:** Wind up, discussions, feedback and perspectives
 
-# Instructions
+# Installation and Setup
 1. [Download](https://www.virtualbox.org/wiki/Downloads) and [install](https://www.virtualbox.org/manual/ch02.html) Virtual Box.
 2. [Download](https://drive.google.com/file/d/1HRAySKr6dkljbGjwY14gHbu5PsjDPACy/view?usp=sharing) the pre-configured Virtual Machine(VM) image.
 3. Create a VM by [importing](https://docs.oracle.com/cd/E26217_01/E26796/html/qs-import-vm.html) the downloaded VM image.
-4. Details of the imported VM are - 
+You would have now created a VM with the following properties - 
     - VM Name: ISMB2022-GRN-VM
     - Operating System: Ubuntu 20.04.1 LTS (64bit)
     - Memory(RAM): 2GB
@@ -58,21 +58,24 @@ edge weights etc.,)
         - Java v11.0.15
         - BEELINE installation and configurations (`/home/ismb2022-grn/ISMB2022-GRN-Workshop/Beeline`)
         - TENET installation and configurations (`/home/ismb2022-grn/ISMB2022-GRN-Workshop/TENET`)
-### BEELINE
+# Running BEELINE
+We will perform the following steps - 
+1. Activate BEELINE 
+2. Run and evaluate GRN inference algorithms using 
+   1. *BLRunner*
+   2. *BLEvaluator*
+3. Visualize the performance of the algorithms using *BLPlotter*
+### 1. Activate BEELINE
 Open a new terminal and execute following commands
 ```commandline
 cd /home/ismb2022-grn/ISMB2022-GRN-Workshop/Beeline
 conda activate BEELINE
 ```
-Execute configured algorithms and evaluate their performance on - 
 
-1. Example dataset
-```commandline
-python BLRunner.py --config config-files/Quickstart/example-quickstart.yaml
-python BLEvaluator.py --config config-files/Quickstart/example-quickstart.yaml --auc --jaccard --epr
-```
+### 2. Run and evaluate GRN inference algorithms
+We will use three types of datasets for this step - 
 
-2. Synthetic datasets
+#### 1. Synthetic datasets
 ```commandline
 python BLRunner.py --config config-files/Quickstart/Synthetic/dyn-BF-quickstart.yaml
 python BLEvaluator.py --config config-files/Quickstart/Synthetic/dyn-BF-quickstart.yaml --auc --jaccard --epr
@@ -86,7 +89,7 @@ python BLEvaluator.py --config config-files/Quickstart/Synthetic/dyn-BFC-quickst
 python BLRunner.py --config config-files/Quickstart/Synthetic/dyn-TF-quickstart.yaml
 python BLEvaluator.py --config config-files/Quickstart/Synthetic/dyn-TF-quickstart.yaml --auc --jaccard --epr
 ```
-3. Curated datasets
+####2. Curated datasets
 ```commandline
 python BLRunner.py --config config-files/Quickstart/Curated/GSD-quickstart.yaml
 python BLEvaluator.py --config config-files/Quickstart/Curated/GSD-quickstart.yaml --auc --jaccard --epr
@@ -101,31 +104,44 @@ python BLRunner.py --config config-files/Quickstart/Curated/VSC-quickstart.yaml
 python BLEvaluator.py --config config-files/Quickstart/Curated/VSC-quickstart.yaml --auc --jaccard --epr
 ```
 
-Create visualizations
+####3. Experimental (scRNA-seq) datasets
 ```commandline
-python BLPlotter.py --config config-files/Quickstart/Synthetic/dyn-BF-quickstart.yaml,config-files/Quickstart/Synthetic/dyn-LI-quickstart.yaml,config-files/Quickstart/Synthetic/dyn-BFC-quickstart.yaml,config-files/Quickstart/Synthetic/dyn-TF-quickstart.yaml,config-files/Quickstart/Curated/GSD-quickstart.yaml,config-files/Quickstart/Curated/mCAD-quickstart.yaml,config-files/Quickstart/Curated/HSC-quickstart.yaml,config-files/Quickstart/Curated/VSC-quickstart.yaml  --epr --auroc --overview
+python BLRunner.py --config config-files/Quickstart/scRNA-seq/mTuck-quickstart.yaml
+python BLEvaluator.py --config config-files/Quickstart/scRNA-seq/mTuck-quickstart.yaml --auc --jaccard --epr
+```
+
+###3. Visualize the performance of GRN inference algorithms
+```commandline
+python BLPlotter.py --config config-files/Quickstart/Synthetic/dyn-BF-quickstart.yaml,config-files/Quickstart/Synthetic/dyn-LI-quickstart.yaml,config-files/Quickstart/Synthetic/dyn-BFC-quickstart.yaml,config-files/Quickstart/Synthetic/dyn-TF-quickstart.yaml,config-files/Quickstart/Curated/GSD-quickstart.yaml,config-files/Quickstart/Curated/mCAD-quickstart.yaml,config-files/Quickstart/Curated/HSC-quickstart.yaml,config-files/Quickstart/Curated/VSC-quickstart.yaml,config-files/Quickstart/scRNA-seq/mTuck-quickstart.yaml  --epr --auroc --overview
 ```
 The following output files will be created - 
-1. AUPRC: `/home/ismb2022-grn/ISMB2022-GRN-Workshop/Beeline/outputs/Curated/VSC/VSC-boxplot-AUROC.pdf`
-2. Early Precision: `/home/ismb2022-grn/ISMB2022-GRN-Workshop/Beeline/outputs/Curated/VSC/VSC-boxplot-EPr.pdf`
-3. Overview: `/home/ismb2022-grn/ISMB2022-GRN-Workshop/Beeline/outputs/Curated/VSC/VSC-overview.pdf`
+1. AUPRC: `/home/ismb2022-grn/ISMB2022-GRN-Workshop/Beeline/dyn-BF-dyn-LI-dyn-BFC-dyn-TF-GSD-mCAD-HSC-VSC-boxplot-AUROC.pdf`
+2. Early Precision: `/home/ismb2022-grn/ISMB2022-GRN-Workshop/Beeline/dyn-BF-dyn-LI-dyn-BFC-dyn-TF-GSD-mCAD-HSC-VSC-boxplot-EPr.pd`
+3. Overview: `/home/ismb2022-grn/ISMB2022-GRN-Workshop/Beeline/dyn-BF-dyn-LI-dyn-BFC-dyn-TF-GSD-mCAD-HSC-VSC-overview.pdf`
 
-> **Note:** Work is in progress to configure the output file directory through the BLPlotter script.
-Until then, the plots will be created as per the output settings in the last configuration file of the `--config` option.
-
-
-### TENET
+# Running TENET
+We will perform the following steps - 
+1. Activate TENET 
+2. Perform GRN inference on -
+   1. Synthetic dataset
+   2. Experimental dataset
+   3. Curated dataset
+    
+### 1. Activate TENET
 Open terminal and execute following commands
 ```commandline
 cd /home/ismb2022-grn/ISMB2022-GRN-Workshop/TENET
 conda activate TENET
 ```
-Execute TENET on synthetic dataset
+
+### 2. Perform GRN inference using different datasets
+
+#### 1. Synthetic Dataset
 ```commandline
 ./TENET expression_data.csv 1 trajectory.txt cell_select.txt 1
 ```
-Execute TENET on experimental dataset
+#### 2. Experimental(scRNA-seq)
 ```commandline
-./TENET expression_dataTuck.csv 1 pseudotimeTuck.txt cell_selectTuck.txt 1
+./TENET expression_dataTuck_trucated.csv 1 pseudotimeTuck.txt cell_selectTuck.txt 1
 ```
 # Resources
