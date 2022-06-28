@@ -56,8 +56,8 @@ You would have now created a VM with the following properties -
         - Anaconda v4.12.0
         - Python v3.9.12
         - Java v11.0.15
-        - Cytoscape v
-        - Graphspace v
+        - Cytoscape v3.9.1
+        - GraphSpace Python Client v1.0.0
         - BEELINE installation and configurations (`/home/ismb2022-grn/ISMB2022-GRN-Workshop/Beeline`)
         - TENET installation and configurations (`/home/ismb2022-grn/ISMB2022-GRN-Workshop/TENET`)
 # Running BEELINE
