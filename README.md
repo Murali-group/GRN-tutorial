@@ -190,4 +190,12 @@ Execute TENET on experimental dataset
 ```commandline
 ./TENET expression_dataTuck.csv 1 pseudotimeTuck.txt cell_selectTuck.txt 1
 ```
+Execute TENET on experimental dataset (1k features)
+```commandline
+./TENET expression_dataTuck_1kfeatures.csv 1 pseudotimeTuck.txt cell_selectTuck.txt 1
+```
+
+
+
+
 # Resources
