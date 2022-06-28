@@ -42,7 +42,7 @@ edge weights etc.,)
 
 # Installation and Setup
 1. [Download](https://www.virtualbox.org/wiki/Downloads) and [install](https://www.virtualbox.org/manual/ch02.html) Virtual Box.
-2. [Download](https://drive.google.com/file/d/1enp5cF-SZyoXIR6mMLx7Lc1j3SzkhhWy/view?usp=sharing) the pre-configured Virtual Machine(VM) image.
+2. [Download](https://bioinformatics.cs.vt.edu/~murali/beeline-tutorials/ISMB2022-GRN-Ubuntu20.04_v3.ova) the pre-configured Virtual Machine(VM) image.
 3. Create a VM by [importing](https://docs.oracle.com/cd/E26217_01/E26796/html/qs-import-vm.html) the downloaded VM image.
 You would have now created a VM with the following properties - 
     - VM Name: ISMB2022-GRN-VM
