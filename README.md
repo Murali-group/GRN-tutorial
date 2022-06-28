@@ -15,7 +15,7 @@
 
 **13:00-14:00:** *Lunch*
 
-**14:00-15:15:** BEELINE (*Hands-on*)
+**14:00-15:15:** BEELINE (*Hands-on*)  
   *Short introduction to scRNA-seq, methods overview &amp; principle* (KNN)
   *Generating synthetic data using BoolODE* (KA)
   *Running BEELINE on synthetic/toy data using pre-selected methods* (KA/BA/KNN)
@@ -24,22 +24,22 @@
 
 **15:15-15:30:** *Break*
 
-**15:30-16:45:** BEELINE 
-  *BEELINE on real scRNA-seq data*
-  *Plotting and interpreting output from BEELINE benchmark*
+**15:30-16:45:** BEELINE  
+  *BEELINE on real scRNA-seq data*  
+  *Plotting and interpreting output from BEELINE benchmark*  
 
 **16:45-17:00:** *Break*
 
-**17:00-17:30:** TENET
-  *Running TENET on terminal using BoolODE synthetic data*
-  *Running TENET on terminal using test real data/Tuck et al dataset*
-  *Visualising TENET results on Cytoscape, and interpretation*
-  *Advanced users (public scRNA-seq data; processed count matrix)*
+**17:00-17:30:** TENET  
+  *Running TENET on terminal using BoolODE synthetic data*  
+  *Running TENET on terminal using test real data/Tuck et al dataset*  
+  *Visualising TENET results on Cytoscape, and interpretation*  
+  *Advanced users (public scRNA-seq data; processed count matrix)*  
     
 **17:30-18:00:** *Discussion:* 
-                Advantages, trade-offs and considerations for GRN inference
-                Perspectives and feedback from audience
-                ISMB Feedback survey link
+                Advantages, trade-offs and considerations for GRN inference  
+                Perspectives and feedback from audience  
+                ISMB Feedback survey link  
 
 # Instructions (Linux)
 1. [Download](https://www.virtualbox.org/wiki/Downloads) and [install](https://www.virtualbox.org/manual/ch02.html) Virtual Box.
