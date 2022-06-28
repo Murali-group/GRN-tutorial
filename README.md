@@ -16,11 +16,11 @@
 **13:00-14:00:** *Lunch*
 
 **14:00-15:15:** BEELINE (*Hands-on*)  
-  *Short introduction to scRNA-seq, methods overview &amp; principle* (KNN)
-  *Generating synthetic data using BoolODE* (KA)
-  *Running BEELINE on synthetic/toy data using pre-selected methods* (KA/BA/KNN)
-  *Plotting output from BEELINE (jupyter notebooks)* (KA/BA/KNN)
-  *Advanced users (running GRN inference on public scRNA-seq data)* (KA/BA/KNN)
+  *Short introduction to scRNA-seq, methods overview &amp; principle* (KNN)  
+  *Generating synthetic data using BoolODE* (KA)  
+  *Running BEELINE on synthetic/toy data using pre-selected methods* (KA/BA/KNN)  
+  *Plotting output from BEELINE (jupyter notebooks)* (KA/BA/KNN)  
+  *Advanced users (running GRN inference on public scRNA-seq data)* (KA/BA/KNN)  
 
 **15:15-15:30:** *Break*
 
