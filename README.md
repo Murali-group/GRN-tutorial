@@ -197,7 +197,7 @@ _python makeGRNsameNumberOfLinks.py [number of links]_
 python makeGRNsameNumberofLinks.py 500
 ```
 
-Execute TENET on experimental dataset (
+Execute TENET on experimental dataset
 ```commandline
 ./TENET expression_dataTuck.csv 2 pseudotimeTuck.txt cell_selectTuck.txt 1
 ```
@@ -205,15 +205,16 @@ Execute TENET on experimental dataset (1k features)
 ```commandline
 ./TENET expression_dataTuck_1kfeatures.csv 2 pseudotimeTuck.txt cell_selectTuck.txt 1
 ```
-Plotting synthetic data (FDR cutoff)
+Plotting synthetic data (FDR cutoff and same number of links
 _python makeGRN.py [cutoff for FDR]_
-```commandline
-python makeGRN.py [cutoff for FDR]
-```
-Plotting synthetic data (Retaining number of links)
 _python makeGRNsameNumberOfLinks.py [number of links]_
 ```commandline
+python makeGRN.py [cutoff for FDR]
 python makeGRNsameNumberofLinks.py 500
+```
+_Output Files_
+```commandline
+./TENET expression_dataTuck.csv 2 pseudotimeTuck.txt cell_selectTuck.txt 1
 ```
 
 
