@@ -16,28 +16,25 @@
 **13:00-14:00:** *Lunch*
 
 **14:00-15:15:** BEELINE (*Hands-on*)
-    *Short introduction to scRNA-seq, methods overview &amp; principle* (KNN)
-    *Generating synthetic data using BoolODE* (KA)
-    *Running BEELINE on synthetic/toy data using pre-selected methods* (KA/BA/KNN)
-    *Plotting output from BEELINE (jupyter notebooks)* (KA/BA/KNN)
-    *Advanced users (running GRN inference on public scRNA-seq data)* (KA/BA/KNN)
+  *Short introduction to scRNA-seq, methods overview &amp; principle* (KNN)
+  *Generating synthetic data using BoolODE* (KA)
+  *Running BEELINE on synthetic/toy data using pre-selected methods* (KA/BA/KNN)
+  *Plotting output from BEELINE (jupyter notebooks)* (KA/BA/KNN)
+  *Advanced users (running GRN inference on public scRNA-seq data)* (KA/BA/KNN)
 
 **15:15-15:30:** *Break*
 
 **15:30-16:45:** BEELINE 
-    *Implement TENET in BEELINE*
-    *Intro to TENET and BEELINE (methods overview)*
-    *Jupyter notebooks with steps (~15-25min)*
-    *Inference on simulated data using BEELINE/TENET*
-    *Advanced users (public scRNA-seq data; processed count matrix)*
+  *BEELINE on real scRNA-seq data*
+  *Plotting and interpreting output from BEELINE benchmark*
 
 **16:45-17:00:** *Break*
 
 **17:00-17:30:** TENET
-    *Running TENET on terminal using BoolODE synthetic data*
-    *Running TENET on terminal using test real data/Tuck et al dataset*
-    *Visualising TENET results on Cytoscape, and interpretation*
-    *Advanced users (public scRNA-seq data; processed count matrix)*
+  *Running TENET on terminal using BoolODE synthetic data*
+  *Running TENET on terminal using test real data/Tuck et al dataset*
+  *Visualising TENET results on Cytoscape, and interpretation*
+  *Advanced users (public scRNA-seq data; processed count matrix)*
     
 **17:30-18:00:** *Discussion:* 
                 Advantages, trade-offs and considerations for GRN inference
