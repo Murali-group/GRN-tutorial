@@ -184,18 +184,37 @@ conda activate TENET
 ```
 Execute TENET on synthetic dataset
 ```commandline
-./TENET expression_data.csv 1 trajectory.txt cell_select.txt 1
+./TENET expression_data.csv 2 trajectory.txt cell_select.txt 1
 ```
-Execute TENET on experimental dataset
+Plotting synthetic data (FDR cutoff)
+_python makeGRN.py [cutoff for FDR]_
 ```commandline
-./TENET expression_dataTuck.csv 1 pseudotimeTuck.txt cell_selectTuck.txt 1
+python makeGRN.py [cutoff for FDR]
+```
+Plotting synthetic data (Retaining number of links)
+_python makeGRNsameNumberOfLinks.py [number of links]_
+```commandline
+python makeGRNsameNumberofLinks.py 500
+```
+
+Execute TENET on experimental dataset (
+```commandline
+./TENET expression_dataTuck.csv 2 pseudotimeTuck.txt cell_selectTuck.txt 1
 ```
 Execute TENET on experimental dataset (1k features)
 ```commandline
-./TENET expression_dataTuck_1kfeatures.csv 1 pseudotimeTuck.txt cell_selectTuck.txt 1
+./TENET expression_dataTuck_1kfeatures.csv 2 pseudotimeTuck.txt cell_selectTuck.txt 1
 ```
-
-
+Plotting synthetic data (FDR cutoff)
+_python makeGRN.py [cutoff for FDR]_
+```commandline
+python makeGRN.py [cutoff for FDR]
+```
+Plotting synthetic data (Retaining number of links)
+_python makeGRNsameNumberOfLinks.py [number of links]_
+```commandline
+python makeGRNsameNumberofLinks.py 500
+```
 
 
 # Resources
