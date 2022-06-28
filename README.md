@@ -42,7 +42,7 @@ edge weights etc.,)
 
 # Installation and Setup
 1. [Download](https://www.virtualbox.org/wiki/Downloads) and [install](https://www.virtualbox.org/manual/ch02.html) Virtual Box.
-2. [Download](https://drive.google.com/file/d/1HRAySKr6dkljbGjwY14gHbu5PsjDPACy/view?usp=sharing) the pre-configured Virtual Machine(VM) image.
+2. [Download](https://drive.google.com/file/d/1enp5cF-SZyoXIR6mMLx7Lc1j3SzkhhWy/view?usp=sharing) the pre-configured Virtual Machine(VM) image.
 3. Create a VM by [importing](https://docs.oracle.com/cd/E26217_01/E26796/html/qs-import-vm.html) the downloaded VM image.
 You would have now created a VM with the following properties - 
     - VM Name: ISMB2022-GRN-VM
@@ -56,6 +56,8 @@ You would have now created a VM with the following properties -
         - Anaconda v4.12.0
         - Python v3.9.12
         - Java v11.0.15
+        - Cytoscape v
+        - Graphspace v
         - BEELINE installation and configurations (`/home/ismb2022-grn/ISMB2022-GRN-Workshop/Beeline`)
         - TENET installation and configurations (`/home/ismb2022-grn/ISMB2022-GRN-Workshop/TENET`)
 # Running BEELINE
@@ -89,7 +91,7 @@ python BLEvaluator.py --config config-files/Quickstart/Synthetic/dyn-BFC-quickst
 python BLRunner.py --config config-files/Quickstart/Synthetic/dyn-TF-quickstart.yaml
 python BLEvaluator.py --config config-files/Quickstart/Synthetic/dyn-TF-quickstart.yaml --auc --jaccard --epr
 ```
-####2. Curated datasets
+#### 2. Curated datasets
 ```commandline
 python BLRunner.py --config config-files/Quickstart/Curated/GSD-quickstart.yaml
 python BLEvaluator.py --config config-files/Quickstart/Curated/GSD-quickstart.yaml --auc --jaccard --epr
@@ -104,13 +106,13 @@ python BLRunner.py --config config-files/Quickstart/Curated/VSC-quickstart.yaml
 python BLEvaluator.py --config config-files/Quickstart/Curated/VSC-quickstart.yaml --auc --jaccard --epr
 ```
 
-####3. Experimental (scRNA-seq) datasets
+#### 3. Experimental (scRNA-seq) datasets
 ```commandline
 python BLRunner.py --config config-files/Quickstart/scRNA-seq/mTuck-quickstart.yaml
 python BLEvaluator.py --config config-files/Quickstart/scRNA-seq/mTuck-quickstart.yaml --auc --jaccard --epr
 ```
 
-###3. Visualize the performance of GRN inference algorithms
+### 3. Visualize the performance of GRN inference algorithms
 ```commandline
 python BLPlotter.py --config config-files/Quickstart/Synthetic/dyn-BF-quickstart.yaml,config-files/Quickstart/Synthetic/dyn-LI-quickstart.yaml,config-files/Quickstart/Synthetic/dyn-BFC-quickstart.yaml,config-files/Quickstart/Synthetic/dyn-TF-quickstart.yaml,config-files/Quickstart/Curated/GSD-quickstart.yaml,config-files/Quickstart/Curated/mCAD-quickstart.yaml,config-files/Quickstart/Curated/HSC-quickstart.yaml,config-files/Quickstart/Curated/VSC-quickstart.yaml,config-files/Quickstart/scRNA-seq/mTuck-quickstart.yaml  --epr --auroc --overview
 ```
