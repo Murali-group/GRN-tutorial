@@ -214,7 +214,8 @@ python makeGRNsameNumberofLinks.py 500
 ```
 _Output Files_
 ```commandline
-./TENET expression_dataTuck.csv 2 pseudotimeTuck.txt cell_selectTuck.txt 1
+TE_results_matrix.fdr0.01.sif
+TE_results_matrix.NumberOfLinks500.sif
 ```
 
 
