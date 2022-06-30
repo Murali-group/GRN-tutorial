@@ -1,42 +1,43 @@
 # Tutorial on "Gene regulatory network inference from single-cell transcriptomics data" (ISMB 2022)
 
-# Schedule 
+# Schedule
 
-*11:00 am - 6:00 pm* (Lunch Break 1:00 pm - 2:00 pm; Coffee Breaks at 3:15 - 3:30 and 4:45 - 5:00 pm)
+*11:00am-6:00pm, July 10, 2022* 
+**10:45am-11:00pm:** Arrival and coffee
+**11:00am-11:30pm:** Welcome, Introduction, Plan for the day, and meet tutors/speakers
 
-**10:45-11:00:** Arrival and coffee
-**11:00-11:30:** Welcome, Introduction, plan for day and meet tutors/speakers
+**11:30am-12:15pm:** 
 
-**11:30-12:15:** Talk 1 (~30min+questions)
+    "How to Build Regulatory Networks from Single-Cell RNA-seq data" (Talk)  (~30min+questions)
     T. M. Murali (*BEELINE*)
 
-**12:15-13:00:** Talk 2 (~30min+questions)
+**12:15pm-13:00pm:** Talk 2 (~30min+questions)
     Kedar Natarajan *TENET*
 
-**13:00-14:00:** *Lunch*
+**13:00pm-14:00pm:** *Lunch*
 
-**14:00-15:15:** BEELINE (*Hands-on*)  
+**14:00pm-15:15pm:** BEELINE (*Hands-on*)  
   *Short introduction to scRNA-seq, methods overview &amp; principle* (KNN)  
   *Generating synthetic data using BoolODE* (KA)  
   *Running BEELINE on synthetic/toy data using pre-selected methods* (KA/BA/KNN)  
   *Plotting output from BEELINE (jupyter notebooks)* (KA/BA/KNN)  
   *Advanced users (running GRN inference on public scRNA-seq data)* (KA/BA/KNN)  
 
-**15:15-15:30:** *Break*
+**15:15pm-15:30pm:** *Break*
 
-**15:30-16:45:** BEELINE  
+**15:30pm-16:45pm:** BEELINE  
   *BEELINE on real scRNA-seq data*  
   *Plotting and interpreting output from BEELINE benchmark*  
 
-**16:45-17:00:** *Break*
+**16:45pm-17:00pm:** *Break*
 
-**17:00-17:30:** TENET  
+**17:00pm-17:30pm:** TENET  
   *Running TENET on terminal using BoolODE synthetic data*  
   *Running TENET on terminal using test real data/Tuck et al dataset*  
   *Visualising TENET results on Cytoscape, and interpretation*  
   *Advanced users (public scRNA-seq data; processed count matrix)*  
     
-**17:30-18:00:** *Discussion:* 
+**17:30pm-18:00pm:** *Discussion:* 
                 Advantages, trade-offs and considerations for GRN inference  
                 Perspectives and feedback from audience  
                 ISMB Feedback survey link  
