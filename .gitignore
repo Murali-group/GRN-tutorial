@@ -1,0 +1,20 @@
+# IntelliJ
+*.iml
+*.ipr
+*.iws
+.idea/
+
+# Eclipse
+.classpath
+.checkstyle
+.factorypath
+.project
+.settings
+.ecbuild
+
+# Vim
+*.sw[op]
+
+
+# OS X
+.DS_Store
