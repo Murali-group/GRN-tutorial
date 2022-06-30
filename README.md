@@ -2,45 +2,46 @@
 
 # Schedule
 
-*11:00am-6:00pm, July 10, 2022* 
+*11:00am-6:00pm, July 10, 2022*
+
 **10:45am-11:00pm:** Arrival and coffee
+
 **11:00am-11:30pm:** Welcome, Introduction, Plan for the day, and meet tutors/speakers
 
 **11:30am-12:15pm:** 
+    *How to Build Gene Regulatory Networks from Single-Cell RNA-seq data* (Talk, ~30min+questions)
+    T. M. Murali
 
-    "How to Build Regulatory Networks from Single-Cell RNA-seq data" (Talk)  (~30min+questions)
-    T. M. Murali (*BEELINE*)
-
-**12:15pm-13:00pm:** Talk 2 (~30min+questions)
-    Kedar Natarajan *TENET*
+**12:15pm-13:00pm:** *Inferring Gene Regulatory Networks Using TENET* (Talk, ~30min+questions)
+    Kedar Natarajan 
 
 **13:00pm-14:00pm:** *Lunch*
 
 **14:00pm-15:15pm:** BEELINE (*Hands-on*)  
-  *Short introduction to scRNA-seq, methods overview &amp; principle* (KNN)  
+  *Short introduction to scRNA-seq, methods overview &amp; principles* (KNN)  
   *Generating synthetic data using BoolODE* (KA)  
   *Running BEELINE on synthetic/toy data using pre-selected methods* (KA/BA/KNN)  
-  *Plotting output from BEELINE (jupyter notebooks)* (KA/BA/KNN)  
+  *Plotting output from BEELINE (Jupyter notebooks)* (KA/BA/KNN)  
   *Advanced users (running GRN inference on public scRNA-seq data)* (KA/BA/KNN)  
 
 **15:15pm-15:30pm:** *Break*
 
 **15:30pm-16:45pm:** BEELINE  
-  *BEELINE on real scRNA-seq data*  
-  *Plotting and interpreting output from BEELINE benchmark*  
+  *Running BEELINE on real scRNA-seq data*  
+  *Plotting and interpreting output from BEELINE*  
 
 **16:45pm-17:00pm:** *Break*
 
 **17:00pm-17:30pm:** TENET  
-  *Running TENET on terminal using BoolODE synthetic data*  
-  *Running TENET on terminal using test real data/Tuck et al dataset*  
-  *Visualising TENET results on Cytoscape, and interpretation*  
+  *Running TENET on the terminal using BoolODE synthetic data*  
+  *Running TENET on the terminal using test real data/Tuck et al dataset*  
+  *Visualising TENET results in Cytoscape, and interpreting them*  
   *Advanced users (public scRNA-seq data; processed count matrix)*  
     
 **17:30pm-18:00pm:** *Discussion:* 
-                Advantages, trade-offs and considerations for GRN inference  
-                Perspectives and feedback from audience  
-                ISMB Feedback survey link  
+  Advantages, trade-offs and considerations for GRN inference  
+  Perspectives and feedback from audience  
+  Filling out ISMB feedback survey
 
 # Instructions (Linux)
 1. [Download](https://www.virtualbox.org/wiki/Downloads) and [install](https://www.virtualbox.org/manual/ch02.html) Virtual Box.
