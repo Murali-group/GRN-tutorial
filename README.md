@@ -1,46 +1,46 @@
 # Tutorial on "Gene regulatory network inference from single-cell transcriptomics data" (ISMB 2022)
 
-# Schedule 
+# Schedule
 
-*11:00 am - 6:00 pm* (Lunch Break 1:00 pm - 2:00 pm; Coffee Breaks at 3:15 - 3:30 and 4:45 - 5:00 pm)
+*11:00am-6:00pm, July 10, 2022*
 
-**11:00-11:30:** Welcome, Introduction, plan for day and meet tutors/speakers
+**10:45am-11:00pm:** Arrival and coffee
 
-**11:30-12:15:** Talk 1 (~30min+questions)
-    T. M. Murali (*Brief intro to scRNA-seq, GRN inference and BEELINE*)
+**11:00am-11:30pm:** Welcome, Introduction, Plan for the day, and meet tutors/speakers
 
-**12:15-13:00:** Talk 2 (~30min+questions)
-    *(tentatively AM) TENET*
+**11:30am-12:15pm:** 
+    *How to Build Gene Regulatory Networks from Single-Cell RNA-seq data* (Talk, ~30min+questions)
+    T. M. Murali
 
-**13:00-14:00:** *Lunch*
+**12:15pm-13:00pm:** *Inferring Gene Regulatory Networks and causal regulators using Transfer Entropy NETwork (TENET)* (Talk, ~30min+questions)
+    Kedar Natarajan 
 
-**14:00-15:15:** GRN inference method 1 (*Hands-on*)
-    *PySCENIC*
-    *Short introduction to scRNA-seq, methods overview &amp; principle*
-    *Count matrix*
-    *Jupyter notebooks with steps (~15-25min)*
-    *Applying GRN inference method 1 on simulated data (workflow and let users run
-themselves). Simulated data from BoolODE as well as modelled scRNA-seq
-parameters*
-    *Advanced users (running GRN inference on public scRNA-seq data)*
+**13:00pm-14:00pm:** *Lunch*
 
-**15:15-15:30:** *Break*
+**14:00pm-15:15pm:** GRN benchmarking using BEELINE (*Hands-on*)  
+  *Introduction to scRNA-seq, methods overview &amp; principles*  
+  *Introduction to generating synthetic datasets using BoolODE*  
+  *Beeline benchmarking on scRNA-seq datasets*  
 
-**15:30-16:45:** GRN inference method 2 (Hands-on)
-    *Implement TENET in BEELINE*
-    *Intro to TENET and BEELINE (methods overview)*
-    *Jupyter notebooks with steps (~15-25min)*
-    *Inference on simulated data using BEELINE/TENET*
-    *Advanced users (public scRNA-seq data; processed count matrix)*
+**15:15pm-15:30pm:** *Break*
 
-**16:45-17:00:** *Break*
+**15:30pm-16:45pm:** BEELINE contd..  
+  *Visualising and interpreting BEELINE results* 
 
-**17:00-17:30:** *Discussion:* advantages, trade-offs, considerations (scaling methods to increased features vs cells, single-cell atlases, accuracy vs sensitivity, TF-target prediction vs
-edge weights etc.,)
+**16:45pm-17:00pm:** *Break*
 
-**17:30-18:00:** Wind up, discussions, feedback and perspectives
+**17:00pm-17:30pm:** GRN inference using TENET  
+  *Applying TENET on scRNA-seq datasets*  
 
+**17:30pm-18:00pm:** *Discussion:*  
+  *Advantages, trade-offs and considerations for GRN inference methods*  
+  *Perspectives and workshop feedback*  
+
+
+# Instructions (Linux)
+=======
 # Installation and Setup
+>>>>>>> main
 1. [Download](https://www.virtualbox.org/wiki/Downloads) and [install](https://www.virtualbox.org/manual/ch02.html) Virtual Box.
 2. [Download](https://bioinformatics.cs.vt.edu/~murali/beeline-tutorials/ISMB2022-GRN-Ubuntu20.04_final.ova) the pre-configured Virtual Machine(VM) image.
 3. Create a VM by [importing](https://docs.oracle.com/cd/E26217_01/E26796/html/qs-import-vm.html) the downloaded VM image.
@@ -60,6 +60,33 @@ You would have now created a VM with the following properties -
         - GraphSpace Python Client v1.0.0
         - BEELINE installation and configurations (`/home/ismb2022-grn/ISMB2022-GRN-Workshop/Beeline`)
         - TENET installation and configurations (`/home/ismb2022-grn/ISMB2022-GRN-Workshop/TENET`)
+
+
+# Instructions (Mac with Intel architecture). Tested on MBP 2019, 2.4Ghz Quad-Core intel i5, 8GB OS Monterey
+1. Follow the above steps 1-3
+2. When starting VirtualBox on intel mac, if you encounter kernel error, try below options
+    a. Go to System Preferences > Security & Privacy and then allow VirtualBox to load
+    b. Restart mac in recovery mode (Command (⌘) + R), goto Utilities tab and terminal. type "spctl kext-consent add VB5E2TV963". Restart again and repeat step (a) and restart virtualbox  
+
+# Instructions (Mac with ARM/M1/Silicon architecture). Tested on MBP 2021, Apple M1, 16GB OS Monterey
+_VirtualBox is not supported on MACs with ARM architecture
+1. [Download](https://www.parallels.com/blogs/parallels-desktop-apple-silicon-mac/) and [install] Parallels. Allow access to downloads folder.
+2. Free Download Ubuntu 20.04.2 ARM64 (2.37GB, free) within Parallels GUI (~3-5min; ~30MB/sec)
+3. Create a 15 day trial account, create password for the Ubuntu OS
+4. Follow the steps 1-3 (from linux instructions). 
+5. If you encounter error during virtual box installation, try below steps
+    a. sudo apt-get update
+	  b. sudo dpkg -i --force-architecture Downloads/virtualbox-6.1_6.1.34-150636.1~Ubuntu~eoan_amd64.deb
+    c. If you see a kernel error, try below
+    d. echo "deb [arch=amd64] https://download.virtualbox.org/virtualbox/debian $(lsb_release -sc) contrib" | sudo tee /etc/apt/sources.list.d/virtualbox.list
+    e. wget https://www.virtualbox.org/download/oracle_vbox_2016.asc
+    f. sudo apt-key add oracle_vbox_2016.asc
+    g. sudo apt update
+    h. sudo apt install virtualbox-6.1
+
+
+### BEELINE
+=======
 # Running BEELINE
 We will perform the following steps - 
 1. Activate BEELINE 
@@ -68,6 +95,7 @@ We will perform the following steps -
    2. *BLEvaluator*
 3. Visualize the performance of the algorithms using *BLPlotter*
 ### 1. Activate BEELINE
+>>>>>>> main
 Open a new terminal and execute following commands
 ```commandline
 cd /home/ismb2022-grn/ISMB2022-GRN-Workshop/Beeline
@@ -140,10 +168,47 @@ conda activate TENET
 
 #### 1. Synthetic Dataset
 ```commandline
-./TENET expression_data.csv 1 trajectory.txt cell_select.txt 1
+./TENET expression_data.csv 2 trajectory.txt cell_select.txt 1
 ```
-#### 2. Experimental(scRNA-seq)
+
+Plotting synthetic data (FDR cutoff)
+_python makeGRN.py [cutoff for FDR]_
 ```commandline
-./TENET expression_dataTuck_trucated.csv 1 pseudotimeTuck.txt cell_selectTuck.txt 1
+python makeGRN.py [cutoff for FDR]
 ```
+Plotting synthetic data (Retaining number of links)
+_python makeGRNsameNumberOfLinks.py [number of links]_
+```commandline
+python makeGRNsameNumberofLinks.py 500
+```
+
+=======
+#### 2. Experimental(scRNA-seq)
+#### Execute TENET on experimental dataset (500 highly variable genes with roles in _stem cell maintenance_ and _neuronal differentiation_)
+```commandline
+./TENET expression_dataTuck_500genes.csv  2 pseudotimeTuck.txt cell_selectTuck.txt 1
+```
+Optionally TENET can be run on higher number of highly variable genes (1725 genes)
+```commandline
+./TENET expression_dataTuck_1725genes.csv 2 pseudotimeTuck.txt cell_selectTuck.txt 1
+```
+or TENET can be run on higher number of highly variable genes (500 genes) and fewer cells (258 cells)
+```commandline
+./TENET expression_dataTuck_500genes.csv 2 pseudotimeTuck.txt cell_selectTuck_subset.txt 1
+```
+
+Plotting synthetic data (FDR cutoff and same number of links
+_python makeGRN.py [cutoff for FDR]_
+_python makeGRNsameNumberOfLinks.py [number of links]_
+```commandline
+python makeGRN.py [cutoff for FDR]
+python makeGRNsameNumberofLinks.py 500
+```
+_Output Files_
+```commandline
+TE_results_matrix.fdr0.01.sif
+TE_results_matrix.NumberOfLinks500.sif
+```
+
+
 # Resources
