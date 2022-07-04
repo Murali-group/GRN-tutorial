@@ -40,10 +40,18 @@ edge weights etc.,)
 
 **17:30-18:00:** Wind up, discussions, feedback and perspectives
 
-# Installation and Setup
-1. [Download](https://www.virtualbox.org/wiki/Downloads) and [install](https://www.virtualbox.org/manual/ch02.html) Virtual Box.
-2. [Download](https://bioinformatics.cs.vt.edu/~murali/beeline-tutorials/ISMB2022-GRN-Ubuntu20.04_final.ova) the pre-configured Virtual Machine(VM) image.
-3. Create a VM by [importing](https://docs.oracle.com/cd/E26217_01/E26796/html/qs-import-vm.html) the downloaded VM image.
+# Virtual Box Installation and  Setup
+
+## Windows and Linux
+[Download](https://www.virtualbox.org/wiki/Downloads) and [install](https://www.virtualbox.org/manual/ch02.html) Virtual Box.
+
+## OS X
+> WIP: Add instructions for MAC 
+
+# Creating Virtual Machine
+1. [Download](https://bioinformatics.cs.vt.edu/~murali/beeline-tutorials/ISMB2022-GRN-Ubuntu20.04_final.ova) the pre-configured Virtual Machine(VM) image.
+2. Create a VM by [importing](https://docs.oracle.com/cd/E26217_01/E26796/html/qs-import-vm.html) the downloaded VM image.
+
 You would have now created a VM with the following properties - 
     - VM Name: ISMB2022-GRN-VM
     - Operating System: Ubuntu 20.04.1 LTS (64bit)
@@ -60,90 +68,45 @@ You would have now created a VM with the following properties -
         - GraphSpace Python Client v1.0.0
         - BEELINE installation and configurations (`/home/ismb2022-grn/ISMB2022-GRN-Workshop/Beeline`)
         - TENET installation and configurations (`/home/ismb2022-grn/ISMB2022-GRN-Workshop/TENET`)
+
 # Running BEELINE
-We will perform the following steps - 
+All steps and commands to run BEELINE are in pre-configured Jupyter notebook ```ISMB 2022 GRN Tutorial on BEELINE.ipynb```.
+Through this notebook we will perform the following steps - 
 1. Activate BEELINE 
-2. Run and evaluate GRN inference algorithms using 
-   1. *BLRunner*
-   2. *BLEvaluator*
+2. Run and evaluate GRN inference algorithms using *BLRunner* and *BLEvaluator*, respectively on following datasets
+   1. Synthetic datasets
+   2. Curated datasets
 3. Visualize the performance of the algorithms using *BLPlotter*
-### 1. Activate BEELINE
-Open a new terminal and execute following commands
-```commandline
-cd /home/ismb2022-grn/ISMB2022-GRN-Workshop/Beeline
-conda activate BEELINE
-```
 
-### 2. Run and evaluate GRN inference algorithms
-We will use three types of datasets for this step - 
+To start up the Jupyter Notebook, execute the shell script ```ISMB2022-BEELINE-GRN-Notebook.sh``` on the Desktop by -
+* Double clicking the shell script
 
-#### 1. Synthetic datasets
-```commandline
-python BLRunner.py --config config-files/Quickstart/Synthetic/dyn-BF-quickstart.yaml
-python BLEvaluator.py --config config-files/Quickstart/Synthetic/dyn-BF-quickstart.yaml --auc --jaccard --epr
+OR
 
-python BLRunner.py --config config-files/Quickstart/Synthetic/dyn-LI-quickstart.yaml
-python BLEvaluator.py --config config-files/Quickstart/Synthetic/dyn-LI-quickstart.yaml --auc --jaccard --epr
+* Open a terminal and execute the command: ```. /home/ismb2022-grn/Desktop/ISMB2022-BEELINE-GRN-Notebook.sh``` 
 
-python BLRunner.py --config config-files/Quickstart/Synthetic/dyn-BFC-quickstart.yaml
-python BLEvaluator.py --config config-files/Quickstart/Synthetic/dyn-BFC-quickstart.yaml --auc --jaccard --epr
+> Please wait for 5-10 seconds for the Jupyter Notebook to load and show up in the browser.
 
-python BLRunner.py --config config-files/Quickstart/Synthetic/dyn-TF-quickstart.yaml
-python BLEvaluator.py --config config-files/Quickstart/Synthetic/dyn-TF-quickstart.yaml --auc --jaccard --epr
-```
-#### 2. Curated datasets
-```commandline
-python BLRunner.py --config config-files/Quickstart/Curated/GSD-quickstart.yaml
-python BLEvaluator.py --config config-files/Quickstart/Curated/GSD-quickstart.yaml --auc --jaccard --epr
-
-python BLRunner.py --config config-files/Quickstart/Curated/mCAD-quickstart.yaml
-python BLEvaluator.py --config config-files/Quickstart/Curated/mCAD-quickstart.yaml --auc --jaccard --epr
-
-python BLRunner.py --config config-files/Quickstart/Curated/HSC-quickstart.yaml
-python BLEvaluator.py --config config-files/Quickstart/Curated/HSC-quickstart.yaml --auc --jaccard --epr
-
-python BLRunner.py --config config-files/Quickstart/Curated/VSC-quickstart.yaml
-python BLEvaluator.py --config config-files/Quickstart/Curated/VSC-quickstart.yaml --auc --jaccard --epr
-```
-
-#### 3. Experimental (scRNA-seq) datasets
-```commandline
-python BLRunner.py --config config-files/Quickstart/scRNA-seq/mTuck-quickstart.yaml
-python BLEvaluator.py --config config-files/Quickstart/scRNA-seq/mTuck-quickstart.yaml --auc --jaccard --epr
-```
-
-### 3. Visualize the performance of GRN inference algorithms
-```commandline
-python BLPlotter.py --config config-files/Quickstart/Synthetic/dyn-BF-quickstart.yaml,config-files/Quickstart/Synthetic/dyn-LI-quickstart.yaml,config-files/Quickstart/Synthetic/dyn-BFC-quickstart.yaml,config-files/Quickstart/Synthetic/dyn-TF-quickstart.yaml,config-files/Quickstart/Curated/GSD-quickstart.yaml,config-files/Quickstart/Curated/mCAD-quickstart.yaml,config-files/Quickstart/Curated/HSC-quickstart.yaml,config-files/Quickstart/Curated/VSC-quickstart.yaml,config-files/Quickstart/scRNA-seq/mTuck-quickstart.yaml  --epr --auroc --overview
-```
-The following output files will be created - 
-1. AUPRC: `/home/ismb2022-grn/ISMB2022-GRN-Workshop/Beeline/dyn-BF-dyn-LI-dyn-BFC-dyn-TF-GSD-mCAD-HSC-VSC-boxplot-AUROC.pdf`
-2. Early Precision: `/home/ismb2022-grn/ISMB2022-GRN-Workshop/Beeline/dyn-BF-dyn-LI-dyn-BFC-dyn-TF-GSD-mCAD-HSC-VSC-boxplot-EPr.pd`
-3. Overview: `/home/ismb2022-grn/ISMB2022-GRN-Workshop/Beeline/dyn-BF-dyn-LI-dyn-BFC-dyn-TF-GSD-mCAD-HSC-VSC-overview.pdf`
+Once the Jupyter Notebook has started, execute all the cells in the notebook sequentially.
 
 # Running TENET
-We will perform the following steps - 
+
+All steps and commands to run TENET are in pre-configured Jupyter notebook ```ISMB 2022 GRN Tutorial on TENET.ipynb```.
+Through this notebook we will perform the following steps - 
 1. Activate TENET 
 2. Perform GRN inference on -
-   1. Synthetic dataset
-   2. Experimental dataset
+   1. Experimental dataset
+   2. Synthetic dataset
    3. Curated dataset
-    
-### 1. Activate TENET
-Open terminal and execute following commands
-```commandline
-cd /home/ismb2022-grn/ISMB2022-GRN-Workshop/TENET
-conda activate TENET
-```
 
-### 2. Perform GRN inference using different datasets
+To start up the Jupyter Notebook, execute the shell script ```ISMB2022-TENET-GRN-Notebook.sh``` located at the Desktop by -
+* Double clicking the shell script
 
-#### 1. Synthetic Dataset
-```commandline
-./TENET expression_data.csv 1 trajectory.txt cell_select.txt 1
-```
-#### 2. Experimental(scRNA-seq)
-```commandline
-./TENET expression_dataTuck_trucated.csv 1 pseudotimeTuck.txt cell_selectTuck.txt 1
-```
-# Resources
+OR
+
+* Open a terminal and execute the command: ```. /home/ismb2022-grn/Desktop/ISMB2022-TENET-GRN-Notebook.sh``` 
+
+> Please wait for 5-10 seconds for the Jupyter Notebook to load and show up in the browser.
+
+Once the Jupyter Notebook has started, execute all the cells in the notebook sequentially.
+
