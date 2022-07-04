@@ -71,7 +71,7 @@ You would have now created a VM with the following properties -
         - TENET installation and configurations (`/home/ismb2022-grn/ISMB2022-GRN-Workshop/TENET`)
 
 # Running BEELINE
-All steps and commands to run BEELINE are in pre-configured Jupyter notebook ```ISMB 2022 GRN Tutorial on BEELINE.ipynb```.
+All steps and commands to run BEELINE are in pre-configured Jupyter notebook [ISMB 2022 GRN Tutorial on BEELINE.ipynb](./notebooks/ISMB%202022%20GRN%20Tutorial%20on%20BEELINE.ipynb).
 Through this notebook we will perform the following steps - 
 1. Activate BEELINE 
 2. Run and evaluate GRN inference algorithms using *BLRunner* and *BLEvaluator*, respectively on following datasets
@@ -92,7 +92,7 @@ Once the Jupyter Notebook has started, execute all the cells in the notebook seq
 
 # Running TENET
 
-All steps and commands to run TENET are in pre-configured Jupyter notebook ```ISMB 2022 GRN Tutorial on TENET.ipynb```.
+All steps and commands to run TENET are in pre-configured Jupyter notebook [ISMB 2022 GRN Tutorial on TENET.ipynb](./notebooks/ISMB%202022%20GRN%20Tutorial%20on%20TENET.ipynb).
 Through this notebook we will perform the following steps - 
 1. Activate TENET 
 2. Perform GRN inference on -
