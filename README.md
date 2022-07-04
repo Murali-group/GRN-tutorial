@@ -32,8 +32,8 @@
 **17:00pm-17:30pm:** GRN inference using TENET  
   *Applying TENET on scRNA-seq datasets*  
 
-**17:30pm-18:00pm:** *Discussion:* 
-  *Advantages, trade-offs and considerations for GRN inference methods* 
+**17:30pm-18:00pm:** *Discussion:*  
+  *Advantages, trade-offs and considerations for GRN inference methods*  
   *Perspectives and workshop feedback*  
 
 # Instructions (Linux)
