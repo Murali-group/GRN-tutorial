@@ -24,7 +24,7 @@
 
 **15:15pm-15:30pm:** *Break*
 
-**15:30pm-16:45pm:** BEELINE contd.. 
+**15:30pm-16:45pm:** BEELINE contd..  
   *Visualising and interpreting BEELINE results* 
 
 **16:45pm-17:00pm:** *Break*
