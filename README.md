@@ -40,7 +40,6 @@
 # Instructions (Linux)
 =======
 # Installation and Setup
->>>>>>> main
 1. [Download](https://www.virtualbox.org/wiki/Downloads) and [install](https://www.virtualbox.org/manual/ch02.html) Virtual Box.
 2. [Download](https://bioinformatics.cs.vt.edu/~murali/beeline-tutorials/ISMB2022-GRN-Ubuntu20.04_final.ova) the pre-configured Virtual Machine(VM) image.
 3. Create a VM by [importing](https://docs.oracle.com/cd/E26217_01/E26796/html/qs-import-vm.html) the downloaded VM image.
@@ -69,20 +68,20 @@ You would have now created a VM with the following properties -
     b. Restart mac in recovery mode (Command (⌘) + R), goto Utilities tab and terminal. type "spctl kext-consent add VB5E2TV963". Restart again and repeat step (a) and restart virtualbox  
 
 # Instructions (Mac with ARM/M1/Silicon architecture). Tested on MBP 2021, Apple M1, 16GB OS Monterey
-_VirtualBox is not supported on MACs with ARM architecture
-1. [Download](https://www.parallels.com/blogs/parallels-desktop-apple-silicon-mac/) and [install] Parallels. Allow access to downloads folder.
-2. Free Download Ubuntu 20.04.2 ARM64 (2.37GB, free) within Parallels GUI (~3-5min; ~30MB/sec)
-3. Create a 15 day trial account, create password for the Ubuntu OS
+_VirtualBox is not supported on MACs with ARM architecture  
+1. [Download](https://www.parallels.com/blogs/parallels-desktop-apple-silicon-mac/) and [install] Parallels. Allow access to downloads folder.  
+2. Free Download Ubuntu 20.04.2 ARM64 (2.37GB, free) within Parallels GUI (~3-5min; ~30MB/sec)  
+3. Create a 15 day trial account, create password for the Ubuntu OS  
 4. Follow the steps 1-3 (from linux instructions). 
-5. If you encounter error during virtual box installation, try below steps
-    a. sudo apt-get update
-	  b. sudo dpkg -i --force-architecture Downloads/virtualbox-6.1_6.1.34-150636.1~Ubuntu~eoan_amd64.deb
-    c. If you see a kernel error, try below
-    d. echo "deb [arch=amd64] https://download.virtualbox.org/virtualbox/debian $(lsb_release -sc) contrib" | sudo tee /etc/apt/sources.list.d/virtualbox.list
-    e. wget https://www.virtualbox.org/download/oracle_vbox_2016.asc
-    f. sudo apt-key add oracle_vbox_2016.asc
-    g. sudo apt update
-    h. sudo apt install virtualbox-6.1
+5. If you encounter error during virtual box installation, try below steps  
+    a. sudo apt-get update  
+	  b. sudo dpkg -i --force-architecture Downloads/virtualbox-6.1_6.1.34-150636.1~Ubuntu~eoan_amd64.deb  
+    c. If you see a kernel error, try below  
+    d. echo "deb [arch=amd64] https://download.virtualbox.org/virtualbox/debian $(lsb_release -sc) contrib" | sudo tee /etc/apt/sources.list.d/virtualbox.list  
+    e. wget https://www.virtualbox.org/download/oracle_vbox_2016.asc  
+    f. sudo apt-key add oracle_vbox_2016.asc  
+    g. sudo apt update  
+    h. sudo apt install virtualbox-6.1  
 
 
 ### BEELINE
@@ -95,7 +94,6 @@ We will perform the following steps -
    2. *BLEvaluator*
 3. Visualize the performance of the algorithms using *BLPlotter*
 ### 1. Activate BEELINE
->>>>>>> main
 Open a new terminal and execute following commands
 ```commandline
 cd /home/ismb2022-grn/ISMB2022-GRN-Workshop/Beeline
