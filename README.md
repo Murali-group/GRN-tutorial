@@ -37,8 +37,8 @@
   *Perspectives and workshop feedback*  
 
 
-# Instructions (Linux)
 # Installation and Setup
+## Instructions (Linux)
 1. [Download](https://www.virtualbox.org/wiki/Downloads) and [install](https://www.virtualbox.org/manual/ch02.html) Virtual Box.
 2. [Download](https://bioinformatics.cs.vt.edu/~murali/beeline-tutorials/ISMB2022-GRN-Ubuntu20.04_final.ova) the pre-configured Virtual Machine(VM) image.
 3. Create a VM by [importing](https://docs.oracle.com/cd/E26217_01/E26796/html/qs-import-vm.html) the downloaded VM image.
@@ -59,16 +59,16 @@ You would have now created a VM with the following properties -
         - BEELINE installation and configurations (`/home/ismb2022-grn/ISMB2022-GRN-Workshop/Beeline`)
         - TENET installation and configurations (`/home/ismb2022-grn/ISMB2022-GRN-Workshop/TENET`)
 
-# Instructions (Windows)
+## Instructions (Windows)
 ---  
 
-# Instructions (Mac with Intel architecture). Tested on MBP 2019, 2.4Ghz Quad-Core intel i5, 8GB OS Monterey
+## Instructions (Mac with Intel architecture). Tested on MBP 2019, 2.4Ghz Quad-Core intel i5, 8GB OS Monterey
 1. Follow the above steps 1-3
 2. When starting VirtualBox on intel mac, if you encounter kernel error, try below options
     a. Go to System Preferences > Security & Privacy and then allow VirtualBox to load
     b. Restart mac in recovery mode (Command (⌘) + R), goto Utilities tab and terminal. type "spctl kext-consent add VB5E2TV963". Restart again and repeat step (a) and restart virtualbox  
 
-# Instructions (Mac with ARM/M1/Silicon architecture). Tested on MBP 2021, Apple M1, 16GB OS Monterey
+## Instructions (Mac with ARM/M1/Silicon architecture). Tested on MBP 2021, Apple M1, 16GB OS Monterey
 _VirtualBox is not supported on MACs with ARM architecture  
 1. [Download](https://www.parallels.com/blogs/parallels-desktop-apple-silicon-mac/) and [install] Parallels. Allow access to downloads folder.  
 2. Free Download Ubuntu 20.04.2 ARM64 (2.37GB, free) within Parallels GUI (~3-5min; ~30MB/sec)  
@@ -181,7 +181,6 @@ _python makeGRNsameNumberOfLinks.py [number of links]_
 python makeGRNsameNumberofLinks.py 500
 ```
 
-=======
 #### 2. Experimental(scRNA-seq)
 #### Execute TENET on experimental dataset (500 highly variable genes with roles in _stem cell maintenance_ and _neuronal differentiation_)
 ```commandline
@@ -211,3 +210,13 @@ TE_results_matrix.NumberOfLinks500.sif
 
 
 # Resources
+
+### Intro single-cell transcriptomics data analysis  
+1. Single-cell analysis [https://www.singlecellcourse.org/].
+2. Analysis of single cell RNA-seq data [https://broadinstitute.github.io/2019_scWorkshop/]
+
+### GRN inference methods, benchmarking and reviews
+1. TENET [https://academic.oup.com/nar/article/49/1/e1/5973444]
+2. BEELINE [https://pubmed.ncbi.nlm.nih.gov/31907445/]
+3. SCENIC [https://www.nature.com/articles/nmeth.4463]
+4. Reviews on GRN network inference [https://www.sciencedirect.com/science/article/abs/pii/S2452310021000184] and [https://pubmed.ncbi.nlm.nih.gov/29342231/]
