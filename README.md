@@ -38,7 +38,6 @@
 
 
 # Instructions (Linux)
-=======
 # Installation and Setup
 1. [Download](https://www.virtualbox.org/wiki/Downloads) and [install](https://www.virtualbox.org/manual/ch02.html) Virtual Box.
 2. [Download](https://bioinformatics.cs.vt.edu/~murali/beeline-tutorials/ISMB2022-GRN-Ubuntu20.04_final.ova) the pre-configured Virtual Machine(VM) image.
@@ -60,6 +59,8 @@ You would have now created a VM with the following properties -
         - BEELINE installation and configurations (`/home/ismb2022-grn/ISMB2022-GRN-Workshop/Beeline`)
         - TENET installation and configurations (`/home/ismb2022-grn/ISMB2022-GRN-Workshop/TENET`)
 
+# Instructions (Windows)
+---  
 
 # Instructions (Mac with Intel architecture). Tested on MBP 2019, 2.4Ghz Quad-Core intel i5, 8GB OS Monterey
 1. Follow the above steps 1-3
@@ -85,7 +86,7 @@ _VirtualBox is not supported on MACs with ARM architecture
 
 
 ### BEELINE
-=======
+
 # Running BEELINE
 We will perform the following steps - 
 1. Activate BEELINE 
