@@ -100,8 +100,9 @@ Through this notebook we will perform the following steps -
    2. Curated datasets
 3. Visualize the performance of the algorithms using *BLPlotter*
 
-To start up the Jupyter Notebook, execute the shell script ```ISMB2022-BEELINE-GRN-Notebook.sh``` on the Desktop by -
-* Double clicking the shell script
+
+To start the Jupyter Notebook  - 
+* Double click the shell script ```ISMB2022-BEELINE-GRN-Notebook.sh``` on the Desktop
 
 OR
 
@@ -121,8 +122,8 @@ Through this notebook we will perform the following steps -
    2. Synthetic dataset
    3. Curated dataset
 
-To start up the Jupyter Notebook, execute the shell script ```ISMB2022-TENET-GRN-Notebook.sh``` located at the Desktop by -
-* Double clicking the shell script
+To start up the Jupyter Notebook -
+* Double click the shell script ```ISMB2022-TENET-GRN-Notebook.sh``` on the Desktop
 
 OR
 
