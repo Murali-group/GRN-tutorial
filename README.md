@@ -7,14 +7,14 @@
 **10:45am-11:00pm:** Arrival and coffee  
 **11:00-11:30:** Welcome, Introduction, plan for day and meet tutors/speakers
 
-**11:30-12:15:** Talk 1: Prof. T. M. Murali *How to Build Gene Regulatory Networks from Single-Cell RNA-seq data*  
+**11:30-12:15:** Talk 1: Prof. T. M. Murali ***How to Build Gene Regulatory Networks from Single-Cell RNA-seq data***  
    
-**12:15-13:00:** Talk 2: Prof. Kedar Natarajan *Inferring Gene Regulatory Networks and causal regulators using Transfer Entropy NETwork (TENET)*  
+**12:15-13:00:** Talk 2: Prof. Kedar Natarajan ***Inferring Gene Regulatory Networks and causal regulators using Transfer Entropy NETwork (TENET)***  
     
 
 **13:00-14:00:** *Lunch*
 
-**14:00-15:15:** GRN benchmarking using BEELINE (*_Hands-on_*)  `
+**14:00-15:15:** GRN benchmarking using BEELINE (*_Hands-on_*)  
   *Introduction to scRNA-seq, methods overview &amp; principles*  
   *Introduction to generating synthetic datasets using BoolODE*  
   *Beeline benchmarking on scRNA-seq datasets* 
@@ -29,7 +29,7 @@
 **17:00-17:30:** GRN inference using TENET  (*_Hands-on_*)  
   *Applying TENET on scRNA-seq datasets and visualisation*
 
-**17:30-18:00:** *Discussions*  
+**17:30-18:00:** Discussions   
   *Advantages, trade-offs and considerations for GRN inference methods*  
   *Perspectives and workshop feedback* 
 
@@ -50,8 +50,7 @@ _Tested on MBP 2019, 2.4Ghz Quad-Core intel i5, 8GB OS Monterey_
 
 ### Instructions (Mac with ARM/M1/Silicon architecture). 
 _Tested on MBP 2021, Apple M1, 16GB OS Monterey_
-_VirtualBox is not supported on MACs with ARM architecture and below are some suggestions that have worked for some users__  
-__We have not exhaustively tested the tutorial material on ARM architecture, and suggest users to use a non-ARM mac for current iteration of the workshop__ 
+_Note: VirtualBox is not supported on MACs with ARM architecture and below are some suggestions that have worked for some users. We have not exhaustively tested the tutorial material on ARM architecture, and suggest users to use a non-ARM mac for current iteration of the workshop_   
 
 1. [Download](https://www.parallels.com/blogs/parallels-desktop-apple-silicon-mac/) and [install] Parallels. Allow access to downloads folder.  
 2. Free Download Ubuntu 20.04.2 ARM64 (2.37GB, free) within Parallels GUI (~3-5min; ~30MB/sec)  
