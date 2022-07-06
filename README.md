@@ -4,35 +4,32 @@
 
 *11:00 am - 6:00 pm* (Lunch Break 1:00 pm - 2:00 pm; Coffee Breaks at 3:15 - 3:30 and 4:45 - 5:00 pm)
 
-**10:45am-11:00pm:** Arrival and coffee
+**10:45am-11:00pm:** Arrival and coffee  
 **11:00-11:30:** Welcome, Introduction, plan for day and meet tutors/speakers
 
-**11:30-12:15:** Talk 1
-    Prof. T. M. Murali *How to Build Gene Regulatory Networks from Single-Cell RNA-seq data*  
-    
-
-**12:15-13:00:** Talk 2 (~30min+questions)
-    Prof. Kedar Natarajan *Inferring Gene Regulatory Networks and causal regulators using Transfer Entropy NETwork (TENET)*  
+**11:30-12:15:** Talk 1: Prof. T. M. Murali *How to Build Gene Regulatory Networks from Single-Cell RNA-seq data*  
+   
+**12:15-13:00:** Talk 2: Prof. Kedar Natarajan *Inferring Gene Regulatory Networks and causal regulators using Transfer Entropy NETwork (TENET)*  
     
 
 **13:00-14:00:** *Lunch*
 
-**14:00-15:15:** GRN benchmarking using BEELINE (*_Hands-on_*)
+**14:00-15:15:** GRN benchmarking using BEELINE (*_Hands-on_*)  `
   *Introduction to scRNA-seq, methods overview &amp; principles*  
   *Introduction to generating synthetic datasets using BoolODE*  
   *Beeline benchmarking on scRNA-seq datasets* 
 
 **15:15-15:30:** *Break*
 
-**15:30-16:45:** BEELINE contd.. (*_Hands-on_*)
+**15:30-16:45:** BEELINE contd.. (*_Hands-on_*)  
   *Visualising and interpreting BEELINE results* 
 
 **16:45-17:00:** *Break*
 
-**17:00-17:30:** GRN inference using TENET  (*_Hands-on_*)
+**17:00-17:30:** GRN inference using TENET  (*_Hands-on_*)  
   *Applying TENET on scRNA-seq datasets and visualisation*
 
-**17:30-18:00:** *Discussions*
+**17:30-18:00:** *Discussions*  
   *Advantages, trade-offs and considerations for GRN inference methods*  
   *Perspectives and workshop feedback* 
 
@@ -43,14 +40,16 @@
 [Download](https://www.virtualbox.org/wiki/Downloads) and [install](https://www.virtualbox.org/manual/ch02.html) Virtual Box.
 
 ## OS X
-### Instructions (Mac with Intel architecture). Tested on MBP 2019, 2.4Ghz Quad-Core intel i5, 8GB OS Monterey
+### Instructions (Mac with Intel architecture). 
+_Tested on MBP 2019, 2.4Ghz Quad-Core intel i5, 8GB OS Monterey_  
 1. [Download](https://www.virtualbox.org/wiki/Downloads) and [install](https://www.virtualbox.org/manual/ch02.html) Virtual Box.
 2. When starting VirtualBox on intel mac, if you encounter kernel error, try below options
     a. Go to System Preferences > Security & Privacy and then allow VirtualBox to load
     b. Restart mac in recovery mode (Command (⌘) + R), goto Utilities tab and terminal. type "spctl kext-consent add VB5E2TV963". Restart again and repeat step (a) and restart virtualbox  
 3. Follow the installation instructions below (see "Creating Virtual Machine")
 
-### Instructions (Mac with ARM/M1/Silicon architecture). Tested on MBP 2021, Apple M1, 16GB OS Monterey
+### Instructions (Mac with ARM/M1/Silicon architecture). 
+_Tested on MBP 2021, Apple M1, 16GB OS Monterey_
 _VirtualBox is not supported on MACs with ARM architecture and below are some suggestions that have worked for some users__  
 __We have not exhaustively tested the tutorial material on ARM architecture, and suggest users to use a non-ARM mac for current iteration of the workshop__ 
 
@@ -76,22 +75,22 @@ __We have not exhaustively tested the tutorial material on ARM architecture, and
 1. [Download](https://bioinformatics.cs.vt.edu/~murali/beeline-tutorials/ISMB2022-GRN-Ubuntu20.04_final.ova) the pre-configured Virtual Machine(VM) image.
 2. Create a VM by [importing](https://docs.oracle.com/cd/E26217_01/E26796/html/qs-import-vm.html) the downloaded VM image.
 
-You would have now created a VM with the following properties - 
-    - VM Name: ISMB2022-GRN-VM
-    - Operating System: Ubuntu 20.04.1 LTS (64bit)
-    - Memory(RAM): 2GB
-    - Root access:
-        - username: ismb2022-grn
-        - password: root
-    - VM contains:
-        - Docker v20.10.7
-        - Anaconda v4.12.0
-        - Python v3.9.12
-        - Java v11.0.15
-        - Cytoscape v3.9.1
-        - GraphSpace Python Client v1.0.0
-        - BEELINE installation and configurations (`/home/ismb2022-grn/ISMB2022-GRN-Workshop/Beeline`)
-        - TENET installation and configurations (`/home/ismb2022-grn/ISMB2022-GRN-Workshop/TENET`)
+You would have now created a VM with the following properties -   
+    - VM Name: ISMB2022-GRN-VM  
+    - Operating System: Ubuntu 20.04.1 LTS (64bit)  
+    - Memory(RAM): 2GB  
+    - Root access:  
+        - username: ismb2022-grn  
+        - password: root  
+    - VM contains:  
+        - Docker v20.10.7  
+        - Anaconda v4.12.0  
+        - Python v3.9.12  
+        - Java v11.0.15  
+        - Cytoscape v3.9.1  
+        - GraphSpace Python Client v1.0.0  
+        - BEELINE installation and configurations (`/home/ismb2022-grn/ISMB2022-GRN-Workshop/Beeline`)  
+        - TENET installation and configurations (`/home/ismb2022-grn/ISMB2022-GRN-Workshop/TENET`)  
 
 # Running BEELINE
 All steps and commands to run BEELINE are in pre-configured Jupyter notebook [ISMB 2022 GRN Tutorial on BEELINE.ipynb](./notebooks/ISMB%202022%20GRN%20Tutorial%20on%20BEELINE.ipynb).
@@ -139,10 +138,10 @@ Once the Jupyter Notebook has started, execute all the cells in the notebook seq
 # Resources
 
 ### Intro single-cell transcriptomics data analysis  
-1. Single-cell analysis course from Wellcome Sanger Institute [https://www.singlecellcourse.org/].
-2. Single-cell analysis course from Broad Institute [https://broadinstitute.github.io/2019_scWorkshop/]
+1. [Single-cell analysis course from Wellcome Sanger Institute](https://www.singlecellcourse.org/)
+2. [Single-cell analysis course from Broad Institute](https://broadinstitute.github.io/2019_scWorkshop/)
 
 ### GRN inference methods, benchmarking and reviews
-1. TENET [https://academic.oup.com/nar/article/49/1/e1/5973444]
-2. BEELINE [https://pubmed.ncbi.nlm.nih.gov/31907445/]
+1. [TENET](https://academic.oup.com/nar/article/49/1/e1/5973444)
+2. [BEELINE](https://pubmed.ncbi.nlm.nih.gov/31907445/)
 3. Reviews on GRN network inference [https://www.sciencedirect.com/science/article/abs/pii/S2452310021000184] and [https://pubmed.ncbi.nlm.nih.gov/29342231/]
