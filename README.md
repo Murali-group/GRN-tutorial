@@ -1,5 +1,15 @@
 # Tutorial on "Gene regulatory network inference from single-cell transcriptomics data" (ISMB 2022)
 
+# Table of Contents
+**[Schedule](#schedule)**<br>
+**[Virtual Box Installation and Setup](#virtual-box-installation-and-setup)**<br>
+&emsp;  [Windows and Linux](#windows-and-linux)<br>
+&emsp;  [OS X](#os-x)<br>
+**[Creating Virtual Machine](#creating-virtual-machine)**<br>
+**[Running BEELINE](#running-beeline)**<br>
+**[Running TENET](#running-tenet)**<br>
+**[Resources](#resources)**<br>
+
 # Schedule 
 
 *11:00 am - 6:00 pm* (Lunch Break 1:00 pm - 2:00 pm; Coffee Breaks at 3:15 - 3:30 and 4:45 - 5:00 pm)
@@ -7,7 +17,7 @@
 **10:45am-11:00pm:** Arrival and coffee  
 **11:00-11:30:** Welcome, Introduction, plan for day and meet tutors/speakers
 
-**11:30-12:15:** Talk 1: Prof. T. M. Murali ***How to Build Gene Regulatory Networks from Single-Cell RNA-seq data***  
+**11:30-12:15:** Talk 1: Prof. T. M. Murali ***[How to Build Gene Regulatory Networks from Single-Cell RNA-seq data](http://bioinformatics.cs.vt.edu/~murali/beeline-tutorials/2022-07-10-ismb-beeline-grns.pdf)***  
    
 **12:15-13:00:** Talk 2: Prof. Kedar Natarajan ***Inferring Gene Regulatory Networks and causal regulators using Transfer Entropy NETwork (TENET)***  
     
@@ -34,7 +44,7 @@
   *Perspectives and workshop feedback* 
 
 
-# Virtual Box Installation and  Setup
+# Virtual Box Installation and Setup
 
 ## Windows and Linux
 [Download](https://www.virtualbox.org/wiki/Downloads) and [install](https://www.virtualbox.org/manual/ch02.html) Virtual Box.
@@ -118,9 +128,8 @@ All steps and commands to run TENET are in pre-configured Jupyter notebook [ISMB
 Through this notebook we will perform the following steps - 
 1. Activate TENET 
 2. Perform GRN inference on -
-   1. Experimental dataset
-   2. Synthetic dataset
-   3. Curated dataset
+   1. Synthetic dataset
+   2. Experimental dataset
 
 To start up the Jupyter Notebook -
 * Double click the shell script ```ISMB2022-TENET-GRN-Notebook.sh``` on the Desktop
@@ -144,4 +153,6 @@ Once the Jupyter Notebook has started, execute all the cells in the notebook seq
 ### GRN inference methods, benchmarking and reviews
 1. [TENET](https://academic.oup.com/nar/article/49/1/e1/5973444)
 2. [BEELINE](https://pubmed.ncbi.nlm.nih.gov/31907445/)
-3. Reviews on GRN network inference [https://www.sciencedirect.com/science/article/abs/pii/S2452310021000184] and [https://pubmed.ncbi.nlm.nih.gov/29342231/]
+3. Reviews on GRN network inference
+   1. [Gene regulatory network inference in single-cell biology](https://www.sciencedirect.com/science/article/abs/pii/S2452310021000184)
+   2. [Mapping gene regulatory networks from single-cell omics data](https://pubmed.ncbi.nlm.nih.gov/29342231/)
