@@ -19,7 +19,8 @@
 
 **11:30-12:15:** Talk 1: Prof. T. M. Murali ***[How to Build Gene Regulatory Networks from Single-Cell RNA-seq data](http://bioinformatics.cs.vt.edu/~murali/beeline-tutorials/2022-07-10-ismb-beeline-grns.pdf)***  
    
-**12:15-13:00:** Talk 2: Prof. Kedar Natarajan ***Inferring Gene Regulatory Networks and causal regulators using Transfer Entropy NETwork (TENET)***  
+**12:15-13:00:** Talk 2: Prof. Kedar Natarajan ***Inferring Gene Regulatory Networks and causal regulators using Transfer Entropy NETwork (TENET)***  [slides](https://drive.google.com/file/d/12IjP2O9suir3-VF9O5S7JjUgFKP6k9VZ/view?usp=sharing)
+
     
 
 **13:00-14:00:** *Lunch*
