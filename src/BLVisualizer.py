@@ -10,6 +10,7 @@ import numpy as np
 import pandas as pd
 from graphspace_python.api.client import GraphSpace
 from graphspace_python.graphs.classes.gsgraph import GSGraph
+from graphspace_python.graphs.classes.gslayout import GSLayout
 import uuid
 
 # local imports
@@ -103,7 +104,7 @@ def post_graph_to_graphspace(G, username, password, graph_name, make_public=None
         print("Making graph '%s' public." % (graph_name))
         gsgraph = gs.publish_graph(graph=G)
     
-    print(gsgraph.url)
+    print(gsgraph.url + '?auto_layout=circle')
 
 def constructGraph(edges, node_labels={}, graph_attr={}, popups={}, edge_dirs={}):
     """
