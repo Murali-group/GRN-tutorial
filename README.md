@@ -31,7 +31,7 @@
 
 **15:15-15:30:** *Break*
 
-**15:30-16:45:** BEELINE contd.. (*_Hands-on_*)  
+**15:30-16:45:** BEELINE contd. (*_Hands-on_*)  
   *Visualising and interpreting BEELINE results* 
 
 **16:45-17:00:** *Break*
