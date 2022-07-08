@@ -9,6 +9,7 @@
 **[Running BEELINE](#running-beeline)**<br>
 **[Running TENET](#running-tenet)**<br>
 **[Resources](#resources)**<br>
+**[Tutorial Communication Channel](#tutorial-communication-channel)**<br>
 
 # Schedule 
 
@@ -157,3 +158,6 @@ Once the Jupyter Notebook has started, execute all the cells in the notebook seq
 3. Reviews on GRN network inference
    1. [Gene regulatory network inference in single-cell biology](https://www.sciencedirect.com/science/article/abs/pii/S2452310021000184)
    2. [Mapping gene regulatory networks from single-cell omics data](https://pubmed.ncbi.nlm.nih.gov/29342231/)
+
+# Tutorial Communication Channel
+Please use the [ISMB-2022 Tutorial: GRN inference from scRNA-seq](https://join.slack.com/t/slack-rdm6568/shared_invite/zt-1c7ckfz37-eLMTzds61pllv_Gq4NvV6g) Slack channel for technical support during the tutorial, to initiate discussions, and communicate with participants and speakers.
