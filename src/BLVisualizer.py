@@ -37,6 +37,9 @@ def get_parser() -> argparse.ArgumentParser:
     parser.add_argument('-t', '--threshold', default=0.5,
         help="EdgeWeight threshold above which to add edges to GRN.\n")
 
+    parser.add_argument('-k', '--kedges', default=None,
+        help="A fixed number of the top weighted edges to include in the GRN.\n")
+
     return parser
 
 def parse_arguments():
@@ -212,11 +215,14 @@ def main():
     df = pd.read_csv(str(evalConfig.output_settings.base_dir) + '/' \
                               + str(evalConfig.input_settings.datadir).split("inputs")[1] + '/' \
                               + opts.dataset + '/' + opts.algorithm + '/rankedEdges.csv', sep='\t')
-    
-    #min max scale edge weights
-    df['EdgeWeight'] = (df['EdgeWeight']-df['EdgeWeight'].min())/(df['EdgeWeight'].max()-df['EdgeWeight'].min())
-    #select edges above edge weight threshold
-    edges = [(e['Gene1'], e['Gene2']) for i, e in df.iterrows() if e['EdgeWeight'] > float(opts.threshold)]
+    if opts.kedges:
+        df = df.nlargest(int(opts.kedges), 'EdgeWeight')
+        edges = [(e['Gene1'], e['Gene2']) for i, e in df.iterrows()]
+    else:
+        #min max scale edge weights
+        df['EdgeWeight'] = (df['EdgeWeight']-df['EdgeWeight'].min())/(df['EdgeWeight'].max()-df['EdgeWeight'].min())
+        #select edges above edge weight threshold
+        edges = [(e['Gene1'], e['Gene2']) for i, e in df.iterrows() if e['EdgeWeight'] > float(opts.threshold)]
     
     G = constructGraph(edges)
     graph_name = 'ISMB 2022 GRN Tutorial ' + opts.algorithm + ' ' + opts.dataset + ' Network '+ uuid.uuid4().hex
