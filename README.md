@@ -25,7 +25,7 @@
 
 **13:00-14:00:** *Lunch*
 
-**14:00-15:15:** GRN benchmarking using BEELINE (*_Hands-on_*)  
+**14:00-15:15:** [GRN benchmarking using BEELINE](http://bioinformatics.cs.vt.edu/~murali/beeline-tutorials/2022-07-10-ismb-beeline-data.pdf ) (*_Hands-on_*)  
   *Introduction to scRNA-seq, methods overview &amp; principles*  
   *Introduction to generating synthetic datasets using BoolODE*  
   *Beeline benchmarking on scRNA-seq datasets* 
