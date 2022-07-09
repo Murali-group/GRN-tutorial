@@ -18,9 +18,9 @@
 **10:45am-11:00pm:** Arrival and coffee  
 **11:00-11:30:** Welcome, Introduction, plan for day and meet tutors/speakers
 
-**11:30-12:15:** Talk 1: Prof. T. M. Murali ***[How to Build Gene Regulatory Networks from Single-Cell RNA-seq data](http://bioinformatics.cs.vt.edu/~murali/beeline-tutorials/2022-07-10-ismb-beeline-grns.pdf)***  
+**11:30-12:15:** Talk 1: T. M. Murali ***[How to Build Gene Regulatory Networks from Single-Cell RNA-seq data](http://bioinformatics.cs.vt.edu/~murali/beeline-tutorials/2022-07-10-ismb-beeline-grns.pdf)***  
    
-**12:15-13:00:** Talk 2: Prof. Kedar Natarajan ***[Inferring Gene Regulatory Networks and causal regulators using Transfer Entropy NETwork (TENET)](https://drive.google.com/file/d/12IjP2O9suir3-VF9O5S7JjUgFKP6k9VZ/view?usp=sharing)***
+**12:15-13:00:** Talk 2: Kedar Natarajan ***[Inferring Gene Regulatory Networks and causal regulators using Transfer Entropy NETwork (TENET)](https://drive.google.com/file/d/12IjP2O9suir3-VF9O5S7JjUgFKP6k9VZ/view?usp=sharing)***
 
     
 
@@ -81,7 +81,7 @@ _Note: VirtualBox is not supported on MACs with ARM architecture and below are s
 
 
 
-# Creating Virtual Machine
+# Creating A Virtual Machine
 >**NOTE: The pre-configured Virtual Machine image is undergoing continuous updates. Please wait until July 06, 2022 00:00 EST to download the final version that will be used during the tutorial.**
 1. [Download](https://bioinformatics.cs.vt.edu/~murali/beeline-tutorials/ISMB2022-GRN-Ubuntu20.04_final.ova) the pre-configured Virtual Machine(VM) image.
 2. Create a VM by [importing](https://docs.oracle.com/cd/E26217_01/E26796/html/qs-import-vm.html) the downloaded VM image.
@@ -148,11 +148,11 @@ Once the Jupyter Notebook has started, execute all the cells in the notebook seq
 
 # Resources
 
-### Intro single-cell transcriptomics data analysis  
+### Introduction to single-cell transcriptomics data analysis  
 1. [Single-cell analysis course from Wellcome Sanger Institute](https://www.singlecellcourse.org/)
 2. [Single-cell analysis course from Broad Institute](https://broadinstitute.github.io/2019_scWorkshop/)
 
-### GRN inference methods, benchmarking and reviews
+### GRN inference methods, benchmarking, and reviews
 1. [TENET](https://academic.oup.com/nar/article/49/1/e1/5973444)
 2. [BEELINE](https://pubmed.ncbi.nlm.nih.gov/31907445/)
 3. Reviews on GRN network inference
