@@ -80,9 +80,7 @@ _Note: VirtualBox is not supported on MACs with ARM architecture and below are s
 6. Follow the installation instructions below (see "Creating Virtual Machine")
 
 
-
 # Creating A Virtual Machine
->**NOTE: The pre-configured Virtual Machine image is undergoing continuous updates. Please wait until July 06, 2022 00:00 EST to download the final version that will be used during the tutorial.**
 1. [Download](https://bioinformatics.cs.vt.edu/~murali/beeline-tutorials/ISMB2022-GRN-Ubuntu20.04_final.ova) the pre-configured Virtual Machine(VM) image.
 2. Create a VM by [importing](https://docs.oracle.com/cd/E26217_01/E26796/html/qs-import-vm.html) the downloaded VM image.
 
