@@ -42,8 +42,8 @@
   *Applying TENET on scRNA-seq datasets and visualisation*
 
 **17:30-18:00:** Discussions   
-  *Advantages, trade-offs and considerations for GRN inference methods*  
-  *Perspectives and workshop feedback* 
+  *Perspectives: Advantages, trade-offs and considerations for GRN inference methods*  
+  *[ISMB Tutorial feedback](https://docs.google.com/forms/d/e/1FAIpQLSftVbI5O-P6EidL-PBgmqjdVE9QX3SfsgGKqkX6DDxJzGvrfQ/viewform?usp=sf_link)* 
 
 
 # Virtual Box Installation and Setup
