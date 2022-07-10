@@ -101,6 +101,8 @@ You would have now created a VM with the following properties -
         - BEELINE installation and configurations (`/home/ismb2022-grn/ISMB2022-GRN-Workshop/Beeline`)  
         - TENET installation and configurations (`/home/ismb2022-grn/ISMB2022-GRN-Workshop/TENET`)  
 
+> Note: To enable full screen mode for the virtual machine, you can use the short-cut: Host (Right Ctrl + F) or use the toolbar: View > Full-screen mode
+
 # Running BEELINE
 All steps and commands to run BEELINE are in pre-configured Jupyter notebook [ISMB 2022 GRN Tutorial on BEELINE.ipynb](./notebooks/ISMB%202022%20GRN%20Tutorial%20on%20BEELINE.ipynb).
 Through this notebook we will perform the following steps - 
