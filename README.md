@@ -16,7 +16,8 @@
 *11:00 am - 6:00 pm* (Lunch Break 1:00 pm - 2:00 pm; Coffee Breaks at 3:15 - 3:30 and 4:45 - 5:00 pm)
 
 **10:45am-11:00pm:** Arrival and coffee  
-**11:00-11:30:** Welcome, Introduction, plan for day and meet tutors/speakers
+**11:00-11:30:** Welcome, Introduction, plan for day and meet tutors/speakers  <br/>
+[Intro and hands-on session slides](https://drive.google.com/file/d/1c94U42ERap3spjygJ2J-BuBxvxfWiBEk/view?usp=sharing)
 
 **11:30-12:15:** Talk 1: T. M. Murali ***[How to Build Gene Regulatory Networks from Single-Cell RNA-seq data](http://bioinformatics.cs.vt.edu/~murali/beeline-tutorials/2022-07-10-ismb-beeline-grns.pdf)***  
    
